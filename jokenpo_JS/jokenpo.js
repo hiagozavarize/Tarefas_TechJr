@@ -15,7 +15,6 @@ const machineChoice = () =>
 console.log("Escolha:")
 let player = prompt("Pedra(0) Papel(1) Tesoura(2) ")
 
-const playerChoice = () => 
-    playerOptions[(0, playerOptions.length - 1)]
+let playerChoice = playerOptions[player]
 
-console.log(playerChoice())
+console.log(playerChoice)
