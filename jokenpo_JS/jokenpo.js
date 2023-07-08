@@ -17,26 +17,26 @@ do{
     const playerChoice = playerOptions[player]
 
     if(playerChoice == machineChoice){
-        console.log("Empate")
-        console.log(`vc escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
+        console.log("Empate!")
+        console.log(`Você escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
     }else if(playerChoice == 'Pedra' && machineChoice == 'Tesoura'){
-        console.log(`vc escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
-        console.log("Vc ganhou")  
+        console.log(`Você escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
+        console.log("Você ganhou!")  
     }else if(playerChoice == 'Tesoura' && machineChoice == 'Papel'){
-        console.log(`vc escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
-        console.log("Vc ganhou")  
+        console.log(`Você escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
+        console.log("Você ganhou!")  
     }else if(playerChoice == 'Papel' && machineChoice == 'Pedra'){
-        console.log(`vc escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
-        console.log("Vc ganhou")  
+        console.log(`Você escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
+        console.log("Você ganhou!")  
     }else if(playerChoice == 'Tesoura' && machineChoice == 'Pedra'){
-        console.log(`vc escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
-        console.log("a maquina ganhou")  
+        console.log(`Você escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
+        console.log("A maquina ganhou!")  
     }else if(playerChoice == 'Papel' && machineChoice == 'Tesoura'){
-        console.log(`vc escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
-        console.log("a maquina ganhou")   
+        console.log(`Você escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
+        console.log("a maquina ganhou!")   
     }else if(playerChoice == 'Pedra' && machineChoice == 'Papel'){
-        console.log(`vc escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
-        console.log("a maquina ganhou")   
+        console.log(`Você escolheu ${playerChoice} e a maquina escolheu ${machineChoice}`)
+        console.log("A maquina ganhou!")   
     }
     console.log("===================")
     reset = prompt("Jogar novamente? Sim(1) Não(0) ")
