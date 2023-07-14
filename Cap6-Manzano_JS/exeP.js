@@ -8,12 +8,12 @@ for(let i = 0; i < 12; i++){
     matrizA.push(prompt('Digite um número: '))
 }
 
-matrizA.forEach(function(arrNumB, multArrNumB) {
-    if (arrNumB % 2 != 0) {
-        multArrNumB = arrNumB * 2
-        matrizB.push(multArrNumB);
+matrizA.forEach(function(numArrB, multNumArrB) {
+    if (numArrB % 2 != 0) {
+        multNumArrB = numArrB * 2
+        matrizB.push(multNumArrB);
     }else{
-        matrizB.push(arrNumB);
+        matrizB.push(numArrB);
     }
 })
 
