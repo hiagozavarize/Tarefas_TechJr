@@ -1,5 +1,3 @@
-const prompt = require('prompt-sync')();
-
 let quadrado
 
 for(let i = 15; i <= 200; i += 3){
