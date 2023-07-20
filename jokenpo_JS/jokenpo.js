@@ -39,7 +39,7 @@ do{
         console.log("A maquina ganhou!")   
     }
     console.log("===================")
-    reset = prompt("Jogar novamente? Sim(1) Não(0) ")
+    let reset = parseInt(prompt("Jogar novamente? Sim(1) Não(0) "))
 
 }while(reset == 1)
 
