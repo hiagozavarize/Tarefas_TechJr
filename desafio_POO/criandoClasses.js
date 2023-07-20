@@ -14,20 +14,20 @@ const prompt = require("prompt-sync")();
 
 class Pessoa {
     constructor(nome, idade) {
-        this._nome = nome;
-        this._idade = idade;
+        this.name = nome;
+        this.age = idade;
     }
     nomear(novoNome){
-        this._nome = novoNome
+        this.name = novoNome
     }
     inseriIdade(novaIdade){
-        this._idade = novaIdade
+        this.age = novaIdade
     }
     get falar(){
-        return this._nome
+        return this.name
     }
     get felizAnivesario(){
-        return console.log(`Parabéns pelos ${this._idade} anos!`)
+        return `Parabéns pelos ${this.age} anos`
     }
 
 }
@@ -50,14 +50,3 @@ pessoas.forEach((pessoa) => {
     console.log(`${pessoa.falar} ${pessoa.felizAnivesario}`)
     
 })
-
-// const nomePessoa1 = prompt('Digite o nome da pessoa: ')
-// const idadePessoa1 = parseInt(prompt('Digite a idade da pessoa: '))
-// const pessoa1 = new Pessoa(nomePessoa1, idadePessoa1)
-
-// const nomePessoa2 = prompt('Digite o nome da pessoa: ')
-// const idadePessoa2 = parseInt(prompt('Digite a idade da pessoa: '))
-// const pessoa2 = new Pessoa(nomePessoa2, idadePessoa2)
-
-// console.log(`${pessoa1.falar} ${pessoa1.felizAnivesario}`)
-// console.log(`${pessoa2.falar} ${pessoa2.felizAnivesario}`)
