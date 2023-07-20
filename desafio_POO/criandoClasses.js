@@ -17,12 +17,6 @@ class Pessoa {
         this.name = nome;
         this.age = idade;
     }
-    nomear(novoNome){
-        this.name = novoNome
-    }
-    inseriIdade(novaIdade){
-        this.age = novaIdade
-    }
     get falar(){
         return this.name
     }
