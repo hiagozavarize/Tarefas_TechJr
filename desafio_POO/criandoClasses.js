@@ -32,7 +32,7 @@ class Pessoa {
 
 }
 
-let pessoas = []
+const pessoas = []
 
 do{
 
