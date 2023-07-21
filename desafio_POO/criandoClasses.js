@@ -11,7 +11,6 @@
 */
 
 const prompt = require("prompt-sync")();
-
 class Pessoa {
     constructor(nome, idade) {
         this.name = nome;
@@ -24,7 +23,6 @@ class Pessoa {
         this.age++
         return `Parabéns pelos ${this.age} anos`
     }
-
 }
 
 const pessoas = []
@@ -42,15 +40,8 @@ do{
 
 }while(continuar === 1)
 
-
 pessoas.forEach((pessoa) => {
-    console.log(`${pessoa.falar} ${pessoa.felizAnivesario}`)
-    
-})
-/**
- o forEach pode ser chamado varias vezes para iterar sobre o array de pessoas, incrementando 1 à idade da pessoa a cada vez que for chamado
- */
-pessoas.forEach((pessoa) => {
-    console.log(`${pessoa.falar} ${pessoa.felizAnivesario}`)
-    
+    for(let i = 0; i < 3; i++){
+        console.log(`${pessoa.falar} ${pessoa.felizAnivesario}`)
+    } 
 })
