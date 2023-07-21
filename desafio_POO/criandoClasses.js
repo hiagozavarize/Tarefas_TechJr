@@ -18,9 +18,10 @@ class Pessoa {
         this.age = idade;
     }
     get falar(){
-        return this.name
+        return this.name 
     }
     get felizAnivesario(){
+        this.age++
         return `Parabéns pelos ${this.age} anos`
     }
 
@@ -28,6 +29,7 @@ class Pessoa {
 
 const pessoas = []
 
+let continuar
 do{
 
     const nomePessoa = prompt('Digite o nome da pessoa: ')
@@ -40,6 +42,14 @@ do{
 
 }while(continuar === 1)
 
+
+pessoas.forEach((pessoa) => {
+    console.log(`${pessoa.falar} ${pessoa.felizAnivesario}`)
+    
+})
+/**
+ o forEach pode ser chamado varias vezes para iterar sobre o array de pessoas, incrementando 1 à idade da pessoa a cada vez que for chamado
+ */
 pessoas.forEach((pessoa) => {
     console.log(`${pessoa.falar} ${pessoa.felizAnivesario}`)
     
