@@ -4,16 +4,17 @@ let machineOptions = ['Pedra', 'Papel', 'Tesoura']
 let playerOptions  = ['Pedra', 'Papel', 'Tesoura']
 
 console.log("===== JOKENPÔ =====")
+
+let reset
 do{
     console.log("Escolha:")
     let player = prompt("Pedra(0) Papel(1) Tesoura(2) ")
     console.log("===================")
     //essa função sorteia randomicamente um número de 0 a 2
-    const randomNumber = () => 
-    Math.floor(Math.random() * (2 - 0 + 1)) + 0
+    const randomNumber = () => Math.floor(Math.random() * (3))
     //o número sorteado na função anterior é a posição do item no array "machine"
     const machineChoice = machineOptions[randomNumber(0, machineOptions.length - 1)]
-    //console.log(machineChoice())
+    
     const playerChoice = playerOptions[player]
 
     if(playerChoice == machineChoice){
@@ -39,7 +40,10 @@ do{
         console.log("A maquina ganhou!")   
     }
     console.log("===================")
-    let reset = parseInt(prompt("Jogar novamente? Sim(1) Não(0) "))
+    reset = parseInt(prompt("Jogar novamente? Sim(1) Não(0) "))
 
-}while(reset == 1)
+}while(reset === 1)
+
+console.log("===================")
+console.log("Obrigado por jogar! até mais")
 
