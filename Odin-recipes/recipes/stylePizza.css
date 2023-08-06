@@ -1,0 +1,34 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    font-weight: 700;
+    background-image: linear-gradient(120deg,#FF0000, #FFD700, #FF0000);
+    
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: 	#A9A9A9;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #C0C0C0;
+}
+
+.pepperoniPizza img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 10px #724040;
+}
+.pepperoniPizza h1{
+    text-align: center;
+}
+.pepperoniPizza{
+    margin-top: 0 !important;
+    margin: 20%;
+}
